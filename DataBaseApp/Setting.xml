@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Config>
+  <DataBaseType value="MySql" ></DataBaseType>
+  <Host value="180.76.172.198"></Host>
+  <Port  value="3306" ></Port>
+  <UserName value="root"></UserName>
+  <PassWord value="zhangke12289"></PassWord>
+  <SelectedDataBase value=""></SelectedDataBase>
+  <SelectTable value=""></SelectTable>
+</Config>

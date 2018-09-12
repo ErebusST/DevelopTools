@@ -1,0 +1,21 @@
+﻿<!--$[Description] -->
+<!-- $[Description] Job -->
+<bean name="$[jobName]" class="$[classFullName]"></bean>
+
+<!-- $[Description] JobDetail -->
+<bean name="$[jobDetailName]" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+    <property name="targetObject">
+        <ref bean="$[jobName]"></ref>
+    </property>
+    <property name="targetMethod" value="execute"></property>
+    <!-- 设置等待上一任务完成才会开始下一任务-->
+    <property name="concurrent" value="false"></property>
+</bean>
+
+<!-- $[Description] Trigger -->
+<!--startDelay几秒后开始运行，repeatInterval多长时间执行一次，单位毫秒   $[ExcuteParameter] 秒一次-->
+<bean id="$[jobTriggerName]" class="org.springframework.scheduling.quartz.SimpleTriggerFactoryBean">
+    <property name="jobDetail" ref="$[jobDetailName]"/>
+    <property name="startDelay" value="0"/>
+    <property name="repeatInterval" value="$[ExcuteParameter]"/>
+</bean>

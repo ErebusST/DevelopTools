@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <fieldSetting>
+    <DataBaseType>int</DataBaseType>
+    <DataType>Integer</DataType>
+  </fieldSetting>
+  <fieldSetting>
+    <DataBaseType>bigint</DataBaseType>
+    <DataType>Long</DataType>
+  </fieldSetting>
+  <fieldSetting>
+    <DataBaseType>varchar</DataBaseType>
+    <DataType>String</DataType>
+  </fieldSetting>
+  <fieldSetting>
+    <DataBaseType>bit</DataBaseType>
+    <DataType>Boolean</DataType>
+  </fieldSetting>
+  <fieldSetting>
+    <DataBaseType>datetime</DataBaseType>
+    <DataType>Timestamp</DataType>
+  </fieldSetting>
+  <fieldSetting>
+    <DataBaseType>date</DataBaseType>
+    <DataType>Timestamp</DataType>
+  </fieldSetting>
+  <fieldSetting>
+    <DataBaseType>text</DataBaseType>
+    <DataType>String</DataType>
+  </fieldSetting>
+  <fieldSetting>
+    <DataBaseType>longtext</DataBaseType>
+    <DataType>String</DataType>
+  </fieldSetting>
+  <fieldSetting>
+    <DataBaseType>char</DataBaseType>
+    <DataType>String</DataType>
+  </fieldSetting>
+  <fieldSetting>
+    <DataBaseType>decimal</DataBaseType>
+    <DataType>BigDecimal</DataType>
+  </fieldSetting>
+  <fieldSetting>
+    <DataBaseType>float</DataBaseType>
+    <DataType>Float</DataType>
+  </fieldSetting>
+</DocumentElement>

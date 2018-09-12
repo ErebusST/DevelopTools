@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <DataType>
+    <CodeDataType>Integer</CodeDataType>
+    <SqlDataType>int</SqlDataType>
+  </DataType>
+  <DataType>
+    <CodeDataType>String</CodeDataType>
+    <SqlDataType>varchar</SqlDataType>
+  </DataType>
+  <DataType>
+    <CodeDataType>Boolean</CodeDataType>
+    <SqlDataType>bit</SqlDataType>
+  </DataType>
+  <DataType>
+    <CodeDataType>Timestamp</CodeDataType>
+    <SqlDataType>datetime</SqlDataType>
+    <DataType>
+      <CodeDataType>BigDecimal</CodeDataType>
+      <SqlDataType>decimal</SqlDataType>
+    </DataType>
+    <DataType>
+      <CodeDataType>Object</CodeDataType>
+      <SqlDataType>Other</SqlDataType>
+    </DataType>
+    <DataType>
+      <CodeDataType>Long</CodeDataType>
+      <SqlDataType>Other</SqlDataType>
+    </DataType>
+  </DataType>
+</DocumentElement>

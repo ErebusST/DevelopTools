@@ -1,0 +1,20 @@
+﻿import javax.persistence.*;
+${import}
+
+/**
+ * ${description}
+ *
+ * @author 系统生成
+ * @date ${date}
+ */
+@Entity
+@Table(name = "${table_name}")
+public class ${bean_class_name}
+{
+	
+${fieldList}
+
+${bean}
+
+   
+}
