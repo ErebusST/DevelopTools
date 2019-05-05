@@ -155,7 +155,7 @@ namespace DataBaseApp
                 }
 
                 CodeAndViewFactory.CreateBackgroundCode(zbZDDuanList, tbx_CodePath.Text.Trim(), tbx_gongNengMiaoShu.Text.Trim(), tbx_creater.Text.Trim(), tbx_boxName.Text.Trim()
-                     , tbx_tableName.Text.Trim(), tbx_baoGuDingBuFen.Text.Trim(), tbx_leiMingCheng.Text.Trim(), keyName, tbx_templateUrl.Text.Trim());
+                     , tbx_tableName.Text.Trim(), tbx_baoGuDingBuFen.Text.Trim(), tbx_leiMingCheng.Text.Trim(), keyName, tbx_templateUrl.Text.Trim(),"");
                 MessageBox.Show("生成成功");
             }
             catch (Exception ex)
