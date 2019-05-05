@@ -46,12 +46,14 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lbWorkType = new System.Windows.Forms.ToolStripStatusLabel();
+            this.生成前后端架构ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mmMenuStrip.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // mmMenuStrip
             // 
+            this.mmMenuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.mmMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnBuiderCheckCode,
             this.miSetting,
@@ -59,7 +61,8 @@
             this.toolStripTextBox1});
             this.mmMenuStrip.Location = new System.Drawing.Point(0, 0);
             this.mmMenuStrip.Name = "mmMenuStrip";
-            this.mmMenuStrip.Size = new System.Drawing.Size(1267, 27);
+            this.mmMenuStrip.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.mmMenuStrip.Size = new System.Drawing.Size(1689, 31);
             this.mmMenuStrip.TabIndex = 0;
             this.mmMenuStrip.Text = "menuStrip1";
             // 
@@ -73,71 +76,72 @@
             this.miBuildQuartzConfig,
             this.miDesTools,
             this.miBosTools,
-            this.生成前端和后端代码ToolStripMenuItem});
+            this.生成前端和后端代码ToolStripMenuItem,
+            this.生成前后端架构ToolStripMenuItem});
             this.btnBuiderCheckCode.Name = "btnBuiderCheckCode";
-            this.btnBuiderCheckCode.Size = new System.Drawing.Size(68, 23);
+            this.btnBuiderCheckCode.Size = new System.Drawing.Size(81, 27);
             this.btnBuiderCheckCode.Text = "工具集合";
             // 
             // miDataBase
             // 
             this.miDataBase.Name = "miDataBase";
-            this.miDataBase.Size = new System.Drawing.Size(204, 22);
+            this.miDataBase.Size = new System.Drawing.Size(243, 26);
             this.miDataBase.Text = "生成Insert Update工具";
             this.miDataBase.Click += new System.EventHandler(this.miDataBase_Click);
             // 
             // miCreateBean
             // 
             this.miCreateBean.Name = "miCreateBean";
-            this.miCreateBean.Size = new System.Drawing.Size(204, 22);
+            this.miCreateBean.Size = new System.Drawing.Size(243, 26);
             this.miCreateBean.Text = "生成实体工具";
             this.miCreateBean.Click += new System.EventHandler(this.miCreateBean_Click);
             // 
             // miSqlFormat
             // 
             this.miSqlFormat.Name = "miSqlFormat";
-            this.miSqlFormat.Size = new System.Drawing.Size(204, 22);
+            this.miSqlFormat.Size = new System.Drawing.Size(243, 26);
             this.miSqlFormat.Text = "Sql格式化工具";
             this.miSqlFormat.Click += new System.EventHandler(this.miSqlFormat_Click);
             // 
             // btnBuilderCheckCode
             // 
             this.btnBuilderCheckCode.Name = "btnBuilderCheckCode";
-            this.btnBuilderCheckCode.Size = new System.Drawing.Size(204, 22);
+            this.btnBuilderCheckCode.Size = new System.Drawing.Size(243, 26);
             this.btnBuilderCheckCode.Text = "构建验证代码";
             this.btnBuilderCheckCode.Click += new System.EventHandler(this.btnBuilderCheckCode_Click);
             // 
             // miBuildQuartzConfig
             // 
             this.miBuildQuartzConfig.Name = "miBuildQuartzConfig";
-            this.miBuildQuartzConfig.Size = new System.Drawing.Size(204, 22);
+            this.miBuildQuartzConfig.Size = new System.Drawing.Size(243, 26);
             this.miBuildQuartzConfig.Text = "生成Quartz配置";
             this.miBuildQuartzConfig.Click += new System.EventHandler(this.miBuildQuartzConfig_Click);
             // 
             // miDesTools
             // 
             this.miDesTools.Name = "miDesTools";
-            this.miDesTools.Size = new System.Drawing.Size(204, 22);
+            this.miDesTools.Size = new System.Drawing.Size(243, 26);
             this.miDesTools.Text = "加密/解密";
             this.miDesTools.Click += new System.EventHandler(this.miDesTools_Click);
             // 
             // miBosTools
             // 
             this.miBosTools.Name = "miBosTools";
-            this.miBosTools.Size = new System.Drawing.Size(204, 22);
+            this.miBosTools.Size = new System.Drawing.Size(243, 26);
             this.miBosTools.Text = "Bos工具";
             this.miBosTools.Click += new System.EventHandler(this.miBosTools_Click);
             // 
             // 生成前端和后端代码ToolStripMenuItem
             // 
             this.生成前端和后端代码ToolStripMenuItem.Name = "生成前端和后端代码ToolStripMenuItem";
-            this.生成前端和后端代码ToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
+            this.生成前端和后端代码ToolStripMenuItem.Size = new System.Drawing.Size(243, 26);
             this.生成前端和后端代码ToolStripMenuItem.Text = "生成前端和后端代码";
             this.生成前端和后端代码ToolStripMenuItem.Click += new System.EventHandler(this.生成前端和后端代码ToolStripMenuItem_Click);
             // 
             // miSetting
             // 
             this.miSetting.Name = "miSetting";
-            this.miSetting.Size = new System.Drawing.Size(44, 23);
+            this.miSetting.Size = new System.Drawing.Size(51, 27);
             this.miSetting.Text = "设置";
             this.miSetting.Visible = false;
             // 
@@ -146,13 +150,13 @@
             this.关于ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.版权所有ToolStripMenuItem});
             this.关于ToolStripMenuItem.Name = "关于ToolStripMenuItem";
-            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(44, 23);
+            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(51, 27);
             this.关于ToolStripMenuItem.Text = "关于";
             // 
             // 版权所有ToolStripMenuItem
             // 
             this.版权所有ToolStripMenuItem.Name = "版权所有ToolStripMenuItem";
-            this.版权所有ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.版权所有ToolStripMenuItem.Size = new System.Drawing.Size(144, 26);
             this.版权所有ToolStripMenuItem.Text = "版权所有";
             this.版权所有ToolStripMenuItem.Click += new System.EventHandler(this.版权所有ToolStripMenuItem_Click);
             // 
@@ -161,24 +165,26 @@
             this.toolStripTextBox1.AutoSize = false;
             this.toolStripTextBox1.Name = "toolStripTextBox1";
             this.toolStripTextBox1.ReadOnly = true;
-            this.toolStripTextBox1.Size = new System.Drawing.Size(10, 23);
+            this.toolStripTextBox1.Size = new System.Drawing.Size(12, 27);
             this.toolStripTextBox1.Text = "|";
             // 
             // statusStrip1
             // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.lbWorkType});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 677);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 850);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1267, 26);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(1689, 29);
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(56, 21);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(69, 24);
             this.toolStripStatusLabel1.Text = "工作类型";
             // 
             // lbWorkType
@@ -191,19 +197,26 @@
             this.lbWorkType.Image = ((System.Drawing.Image)(resources.GetObject("lbWorkType.Image")));
             this.lbWorkType.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.lbWorkType.Name = "lbWorkType";
-            this.lbWorkType.Size = new System.Drawing.Size(170, 21);
+            this.lbWorkType.Size = new System.Drawing.Size(215, 24);
             this.lbWorkType.Text = "toolStripDropDownButton1";
             this.lbWorkType.ToolTipText = "点击更改工作类型";
             this.lbWorkType.Click += new System.EventHandler(this.lbWorkType_Click);
             // 
+            // 生成前后端架构ToolStripMenuItem
+            // 
+            this.生成前后端架构ToolStripMenuItem.Name = "生成前后端架构ToolStripMenuItem";
+            this.生成前后端架构ToolStripMenuItem.Size = new System.Drawing.Size(243, 26);
+            this.生成前后端架构ToolStripMenuItem.Text = "生成前后端架构";
+            this.生成前后端架构ToolStripMenuItem.Click += new System.EventHandler(this.生成前后端架构ToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::DataBaseApp.Properties.Resources.sw1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1267, 703);
+            this.ClientSize = new System.Drawing.Size(1689, 879);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.mmMenuStrip);
             this.DoubleBuffered = true;
@@ -211,6 +224,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.mmMenuStrip;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -244,5 +258,6 @@
         private System.Windows.Forms.ToolStripMenuItem btnBuilderCheckCode;
         private System.Windows.Forms.ToolStripMenuItem miBuildQuartzConfig;
         private System.Windows.Forms.ToolStripMenuItem 生成前端和后端代码ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 生成前后端架构ToolStripMenuItem;
     }
 }

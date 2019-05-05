@@ -178,5 +178,10 @@ namespace DataBaseApp
         {
             InitForm(ref createCodeAndView);
         }
+
+        private void 生成前后端架构ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            InitForm(ref )
+        }
     }
 }

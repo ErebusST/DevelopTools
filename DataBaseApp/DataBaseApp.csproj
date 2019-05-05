@@ -170,6 +170,12 @@
     <Compile Include="CreateProjectFileForm.Designer.cs">
       <DependentUpon>CreateProjectFileForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="CreateProjectStruct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateProjectStruct.Designer.cs">
+      <DependentUpon>CreateProjectStruct.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataBaseCopyForm.cs">
       <SubType>Form</SubType>
     </Compile>
