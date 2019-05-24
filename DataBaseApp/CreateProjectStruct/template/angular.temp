@@ -1,0 +1,57 @@
+﻿/**
+ * Created by 司徒彬 ${Date}
+ * ${Description}
+ */
+define(["mcApp"], function (mcApp) {
+    //解析路由
+    mcApp.config(
+        ["$stateProvider",
+            function ($stateProvider) {
+                $stateProvider.state("${Url}",
+                    {
+                        /* abstract : true, */
+                        url: "/${fileName}",
+                        views: {
+                            "frameRightView": {
+                                templateUrl: mcApp.${parentPath} + "${fileName}.html",
+                                controller: "${Controller}"
+                            }
+                        }
+                    });
+            }]);
+
+    mcApp.controller("${Controller}", ${Controller});
+    ${controller}.$inject = ["$rootScope", "$scope", "$state", "ajaxService", "toolService", "pageFactory", "loadFactory"];
+
+    function ${Controller}($rootScope, $scope, $state, ajaxService, toolService, pageFactory, loadFactory) {
+
+        $scope.nodeNumber = "${NodeNumber}";
+        $scope.navTitle = toolService.setActiveTree($scope.nodeNumber);
+
+        //浏览列表需要的选中变量
+        $scope.selectItems = [];
+
+        $scope.findEntity =
+            {
+                pageNumber: 1,
+                pageSize: 20,
+                searchContent: "",
+            };
+
+
+        /*
+         ** 创建作者：司徒彬
+         ** 功能简介：初始化页面
+         */
+        $scope.initPage = function () {
+            //编辑页返回后回复上次查询实体的值
+            $scope.findEntity = toolService.loadFindEntity($scope.findEntity, $scope.nodeNumber);
+            $scope.btn_Search_OnClick(1);
+        };
+
+        $scope.btn_Search_OnClick = function (pageNumber) {
+
+        }
+
+    };
+});
