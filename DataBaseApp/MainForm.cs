@@ -33,6 +33,7 @@ namespace DataBaseApp
         public static BuildQuartzConfig buildQuartzConfig;
         public static CreateExcelFunction createExcelFunction;
         public static CreateCodeAndView createCodeAndView;
+        public static CreateProjectStruct createProjectStruct;
         private void miDataBase_Click(object sender, EventArgs e)
         {
             InitForm(ref dataBaseForm);
@@ -181,7 +182,7 @@ namespace DataBaseApp
 
         private void 生成前后端架构ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            InitForm(ref )
+            InitForm(ref createProjectStruct);
         }
     }
 }

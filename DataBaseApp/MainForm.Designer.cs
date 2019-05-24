@@ -39,6 +39,7 @@
             this.miDesTools = new System.Windows.Forms.ToolStripMenuItem();
             this.miBosTools = new System.Windows.Forms.ToolStripMenuItem();
             this.生成前端和后端代码ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.生成前后端架构ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miSetting = new System.Windows.Forms.ToolStripMenuItem();
             this.关于ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.版权所有ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,7 +47,6 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lbWorkType = new System.Windows.Forms.ToolStripStatusLabel();
-            this.生成前后端架构ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mmMenuStrip.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -138,6 +138,13 @@
             this.生成前端和后端代码ToolStripMenuItem.Text = "生成前端和后端代码";
             this.生成前端和后端代码ToolStripMenuItem.Click += new System.EventHandler(this.生成前端和后端代码ToolStripMenuItem_Click);
             // 
+            // 生成前后端架构ToolStripMenuItem
+            // 
+            this.生成前后端架构ToolStripMenuItem.Name = "生成前后端架构ToolStripMenuItem";
+            this.生成前后端架构ToolStripMenuItem.Size = new System.Drawing.Size(243, 26);
+            this.生成前后端架构ToolStripMenuItem.Text = "生成前后端架构";
+            this.生成前后端架构ToolStripMenuItem.Click += new System.EventHandler(this.生成前后端架构ToolStripMenuItem_Click);
+            // 
             // miSetting
             // 
             this.miSetting.Name = "miSetting";
@@ -202,13 +209,6 @@
             this.lbWorkType.ToolTipText = "点击更改工作类型";
             this.lbWorkType.Click += new System.EventHandler(this.lbWorkType_Click);
             // 
-            // 生成前后端架构ToolStripMenuItem
-            // 
-            this.生成前后端架构ToolStripMenuItem.Name = "生成前后端架构ToolStripMenuItem";
-            this.生成前后端架构ToolStripMenuItem.Size = new System.Drawing.Size(243, 26);
-            this.生成前后端架构ToolStripMenuItem.Text = "生成前后端架构";
-            this.生成前后端架构ToolStripMenuItem.Click += new System.EventHandler(this.生成前后端架构ToolStripMenuItem_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -224,7 +224,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.mmMenuStrip;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

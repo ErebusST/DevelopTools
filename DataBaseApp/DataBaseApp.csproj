@@ -54,6 +54,9 @@
     <ApplicationIcon>20170324112445796_easyicon_net_256.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Aspose.Cells">
+      <HintPath>otherDll\Aspose.Cells.dll</HintPath>
+    </Reference>
     <Reference Include="BceSdkDotNet">
       <HintPath>bce-dotnet-sdk-1.0.1\BceSdkDotNet.dll</HintPath>
     </Reference>
@@ -170,10 +173,10 @@
     <Compile Include="CreateProjectFileForm.Designer.cs">
       <DependentUpon>CreateProjectFileForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="CreateProjectStruct.cs">
+    <Compile Include="CreateProjectStruct\CreateProjectStruct.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CreateProjectStruct.Designer.cs">
+    <Compile Include="CreateProjectStruct\CreateProjectStruct.Designer.cs">
       <DependentUpon>CreateProjectStruct.cs</DependentUpon>
     </Compile>
     <Compile Include="DataBaseCopyForm.cs">
@@ -299,6 +302,9 @@
     <EmbeddedResource Include="CreateProjectFileForm.resx">
       <DependentUpon>CreateProjectFileForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CreateProjectStruct\CreateProjectStruct.resx">
+      <DependentUpon>CreateProjectStruct.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DataBaseCopyForm.resx">
       <DependentUpon>DataBaseCopyForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -370,6 +376,8 @@
     <None Include="templet\QuartzSpringConfigTemplet.temp" />
     <None Include="Resources\sw1.png" />
     <Content Include="20170324112445796_easyicon_net_256.ico" />
+    <Content Include="CreateProjectStruct\template\angular.html" />
+    <None Include="CreateProjectStruct\template\angular.temp" />
     <Content Include="DataType.xml" />
     <Content Include="fieldSetting.xml" />
     <Content Include="jar\DesUtil.jar" />
@@ -378,6 +386,7 @@
   <ItemGroup>
     <Folder Include="bce-dotnet-sdk-1.0.1\" />
     <Folder Include="control\" />
+    <Folder Include="otherDll\" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
